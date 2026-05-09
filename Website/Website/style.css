@@ -1,0 +1,266 @@
+style{font-family:Arial, sans-serif;}
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    background: #f5e7dc;
+    color:#081b44;
+}
+
+    /* navigation bar */
+
+nav{
+    background:#081b44;
+    padding:10px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:#f7d7d0;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+    /* home */
+
+#home{
+    min-height:100vh;
+    background:#081b44;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+#home h2{
+    color:#8b1e3f;
+    font-size:60px;
+}
+
+#home h1{
+    color:#f7d7d0;
+    font-size:100px;
+    margin-top:10px;
+}
+
+#home p{
+    color:#f7d7d0;
+    margin-top:20px;
+    font-size:20px;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#f7d7d0;
+    color:#081b44;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#8b1e3f;
+    color:white;
+}
+
+    /* section */
+
+section{
+    padding:70px 10%;
+}
+
+.title{
+    width:240px;
+    background:#8b1e3f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:15px 15px 0 0;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.content{
+    background:#fff8f2;
+    padding:40px;
+    border-radius:0 20px 20px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+    /* about */
+
+.about-box{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.profile{
+    width:250px;
+    border-radius:20px;
+    border:5px solid #f7d7d0;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h1{
+    margin-bottom:15px;
+    color:#081b44;
+}
+
+.about-text p{
+    line-height:1.8;
+}
+
+    /* biodata */
+
+#biodata{
+    padding:70px 10%;
+}
+
+.judul-biodata{
+    margin-bottom:20px;
+    color:#081b44;
+}
+
+.biodata-box{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.biodata-item{
+    background:#f7d7d0;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.biodata-item:hover{
+    background:#8b1e3f;
+    color:white;
+    transform:translateY(-5px);
+}
+
+.biodata-item b{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+    /* grid */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f7d7d0;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#8b1e3f;
+    color:white;
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+    /* contact */
+
+.contact-title{
+    color:#081b44;
+    margin-bottom:10px;
+}
+
+.contact-desc{
+    color:gray;
+    margin-bottom:25px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.contact-card{
+    background:#f7d7d0;
+    padding:15px;
+    border-radius:10px;
+    text-decoration:none;
+    color:black;
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    background:#8b1e3f;
+    color:white;
+}
+
+    /* footer */
+
+footer{
+    background:#081b44;
+    color:#f5e7dc;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+    /* respon */
+
+@media(max-width:768px){
+
+    #home h1{
+        font-size:60px;
+    }
+
+    #home h2{
+        font-size:30px;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+
+    .about-box{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
